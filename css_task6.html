@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://mitbhardiwala.github.io/MernStackAssignments/css_task6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            background-image: url('profile_photo.png');
+            /* Replace with your profile photo URL */
+            background-size: cover;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: ;
+
+        }
+
+
+        .login-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 107%;
+        }
+
+        .cancel-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+
+        }
+
+        .remember-me-container {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+
+        .forgot-password {
+            margin-top: 10px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        label[for="username"],
+        [for="password"] {
+            text-align: left;
+            display: block;
+
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            background-color: white;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            width: 110%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="profile-photo"></div>
+        <label for="username"><b>Username</b></label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        <br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <br>
+        <button class="login-button">Login</button>
+        <br>
+        <div class="remember-me-container">
+            <input type="checkbox" id="rememberMe" name="rememberMe" class="remember-me">
+            <label for="rememberMe">Remember Me</label>
+        </div>
+
+
+        <br>
+        <div class="button-container">
+            <button class="cancel-button">Cancel</button>
+            <span class="forgot-password">Forgot Password?</span>
+        </div>
+    </div>
+
+
+</body></html>

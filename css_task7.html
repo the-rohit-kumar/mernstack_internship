@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://mitbhardiwala.github.io/MernStackAssignments/css_task7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            background-color: rgb(254, 12, 177);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: large;
+        }
+
+        .container {
+            background-color: rgb(91, 4, 63);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto; /* Center the container horizontally */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .input-label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 1px;
+            color: white;
+            width: 30%; /* Adjust the width as needed */
+            text-align: left; /* Align the label text to the left */
+            padding-left: 15px;
+            font-size: large;
+        }
+
+        .input-field {
+            display: inline-block;
+            width: 30%; /* Adjust the width as needed */
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+       
+
+        .radio-group {
+            display: flex;
+            align-items: left;
+            margin-bottom: 15px;
+            padding-left: 140px;
+        }
+
+        .radio-label {
+            color: white;
+            margin-right: 150px;
+        }
+
+        .select-label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 1px;
+            color: white;
+            width: 30%; /* Adjust the width as needed */
+            text-align: left; /* Align the label text to the left */
+            
+            font-size: large;
+        }
+
+        .textarea-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 1px;
+            color: white;
+            text-align: left; /* Align the label text to the left */
+            padding-left: 15px;
+            font-size: large;
+        }
+
+        .textarea-field {
+            width: 35%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 168px;
+            padding-left: 50px;
+            
+            border: none;
+            border-radius: 1px;
+
+            text-align: left;
+            
+        }
+
+        .submit-button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 68%;
+            margin-left: 45px;
+        }
+
+        /* Center the About label and textarea */
+        .about-group {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            padding-left: 125px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://mitbhardiwala.github.io/MernStackAssignments/css_task7.html#">
+            <div class="form-group">
+                <label class="input-label" for="name">Name:</label>
+                <input class="input-field" type="text" id="name" name="name" required="" placeholder="your name">
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="email">Email:</label>
+                <input class="input-field" type="email" id="email" name="email" required="" placeholder="your email">
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="password">Password:</label>
+                <input class="input-field" type="password" id="password" name="password" required="">
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="phone">Phone Number:</label>
+                <input class="input-field" type="tel" id="phone" name="phone" required="">
+            </div>
+            <div class="radio-group">
+                <span class="radio-label">Gender:</span>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+                <label class="select-label" for="language">Language:</label>
+                <select class="input-field" id="language" name="language" required="">
+                    <option disabled="" selected="">Select Language</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="zipcode">Zipcode:</label>
+                <input class="input-field" type="text" id="zipcode" name="zipcode" required="">
+            </div>
+            <div class="about-group"> <!-- Wrap About label and textarea in a div -->
+                <label class="textarea-label" for="about">About:</label>
+                <textarea class="textarea-field" id="about" name="about" rows="4" required="" placeholder="write about yourself..."></textarea>
+            </div>
+            <button class="submit-button" type="submit">Register</button>
+        </form>
+    </div>
+
+
+</body></html>
